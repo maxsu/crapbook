@@ -8,7 +8,7 @@ import unescape from 'lodash.unescape';
 import {get} from '../../state';
 
 export default {
-	match: /^javascript$/i,
+	match: /^javascript|js|script$/i,
 	process(output) {
 		try {
 			const func = new Function(`
